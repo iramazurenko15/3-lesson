@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 3</title>
+</head>
+<body>
+	<script>
+		for (var i = 1; i<=100; i++) {
+			var string = '';
+			if (!((i % 3 == 0) || (i % 5 == 0))) string = i;
+			else (i % 3 == 0) ? string += "Fizz" : string += "Buzz";
+			console.log(string);
+		}		
+	</script>
+	<script>
+		var symbol = "";
+		for (var i = 0; i < 7; i++) {
+			symbol = symbol + "#";
+			console.log(symbol);
+		}
+	</script>	
+	<script>
+		var string1 = "";
+		var string2 = "";
+		for (var i = 0; i < 8; i++) {
+			if (i % 2 == 0) {
+				string1 = string1 + " ";
+			}
+			else string1 =  string1 +"#";
+		}
+		for (var i = 0; i <8; i++) {
+			if (i % 2 == 0) {
+				string2 = string2 + "#";
+			}
+			else string2 =  string2 +" ";
+		}
+		for (var i = 0; i < 8; i++) {
+			if (!(i % 2 == 0)) {
+				console.log(string1);
+			}
+			else console.log(string2);
+		}
+	</script>
+</body>
+</html>
